@@ -6,6 +6,16 @@ This project is aiming to create a random workout creator website using HTML, CS
 
 The Goal of this project is to deepen the understanding of HTML and CSS as well as the possibilities of functionality and trigger events throug JS.
 
+## Project Structure
+
+The project utilizes the following technologies:
+
+- **HTML:** Responsible for structuring the content and layout of the website.
+- **CSS:** Used for styling and design to enhance the user experience.
+- **JavaScript:** Implements dynamic functionality.
+
+## Requirements
+
 The requirements for this Project are:
 - **Should have**
     - Get input from the user
@@ -24,14 +34,6 @@ To fulfill theses rquirements the website offers:
 - **Bonus**
     - add/remove list elements with workout content
     - use eventListener onkeydown to trigger colorChange on enter
-
-## Project Structure
-
-The project utilizes the following technologies:
-
-- **HTML:** Responsible for structuring the content and layout of the website.
-- **CSS:** Used for styling and design to enhance the user experience.
-- **JavaScript:** Implements dynamic functionality, such as recipe redirection.
 
 ## Contributors
 
