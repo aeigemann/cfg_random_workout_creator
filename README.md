@@ -7,23 +7,23 @@ This project is aiming to create a random workout creator website using HTML, CS
 The Goal of this project is to deepen the understanding of HTML and CSS as well as the possibilities of functionality and trigger events throug JS.
 
 The requirements for this Project are:
-**Should have**
-- Get input from the user
-- make changes to HTML or CSS through JavaScript
-- use an event to trigger a change on webpage
-**Bonus**
-- Add HTML Element to a web page using the DOM
-- Remove HTML Element from a web page using the DOM
-- Research and use other DOM events such as onmouseover
+- **Should have**
+    - Get input from the user
+    - make changes to HTML or CSS through JavaScript
+    - use an event to trigger a change on webpage
+- **Bonus**
+    - Add HTML Element to a web page using the DOM
+    - Remove HTML Element from a web page using the DOM
+    - Research and use other DOM events such as onmouseover
 
 To fulfill theses rquirements the website offers: 
-**Should have**
-- drop down menus to filter workout type and length, and input to change color
-- change color and font to personalize website
-- events like onClick, onChange, onmouseover, and onmouseout
-**Bonus**
-- add/remove list elements with workout content
-- use eventListener onkeydown to trigger colorChange on enter
+- **Should have**
+    - drop down menus to filter workout type and length, and input to change color
+    - change color and font to personalize website
+    - events like onClick, onChange, onmouseover, and onmouseout
+- **Bonus**
+    - add/remove list elements with workout content
+    - use eventListener onkeydown to trigger colorChange on enter
 
 ## Project Structure
 
