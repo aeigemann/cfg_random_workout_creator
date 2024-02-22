@@ -19,7 +19,7 @@ function changeBackgroundImage() {
     } else if (selectedValue === "yoga") {
         outputSection.style.backgroundImage = "url('images/yoga-workout.jpg')";
     } else if (selectedValue === "mix") {
-        outputSection.style.backgroundImage = "url('images/mix.jpg')";
+        outputSection.style.backgroundImage = "url('images/mix-image.jpg')";
     }
 
     // Center the background image
