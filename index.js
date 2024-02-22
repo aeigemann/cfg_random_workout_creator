@@ -102,6 +102,35 @@ function closeMenu(){
 function openColorPopup(){
     closeMenu()
     document.getElementById("change-color-popup").style.display = "block";
+
+    document.getElementById("input-color").addEventListener("keydown", function(event) {
+        // Check if the key pressed is the Enter key (key code 13)
+        if (event.keyCode === 13) {
+            // Call a function or perform any action when the Enter key is pressed
+            try{
+                colorString = document.getElementById("input-color").value
+                isValidColor(colorString)
+                if(colorString[0] != "#"){
+                    colorString = "#" + colorString
+                }
+                changeColor(colorString)
+            } catch(error){
+                console.log(error)
+                alert("Please enter a valid color hex code (i.e. 00ffff)");
+            } finally {
+                document.getElementById("input-color").value = ""
+            }
+        }
+    });
+}
+
+function isValidColor(colorString) {
+    // Regular expressions for hex color formats
+    const hexRegex = new RegExp("^#?([0-9a-f]{3}){1,2}$") 
+
+    if(!hexRegex.test(colorString)){
+        throw new Error('invalid HexCode');
+    }
 }
 
 function closeColorPopup(){
@@ -120,14 +149,21 @@ function closeFontPopup(){
 // change site color
 function changeColor(color){
     closeColorPopup()
-    items = document.getElementsByClassName("changeableColor");
+    items = document.getElementsByClassName("changeable-color");
     for( i = 0; i < items.length; i++){
         items[i].style.color = color;
     }
-    items = document.getElementsByClassName("changeableBackgroundColor");
+    items = document.getElementsByClassName("changeable-background-color");
     for( i = 0; i < items.length; i++){
         items[i].style.backgroundColor = color;
     }
+}
+
+
+
+// change color from input field
+function changeColorFromInput(){
+    document.getElementById("input-color")
 }
 
 function changeFont(font){

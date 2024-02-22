@@ -18,73 +18,78 @@
                         <img src="images/yoga-logo.jpg" class="logo">
                     </nav>
                     <div class="header-text">
-                        <p class="changeableColor changeableFont">Code First Girls Project</p>
-                        <h1>Random <span class="changeableColor changeableFont">Workout</span> Creator</h1>
+                        <p class="changeable-color changeableFont">Code First Girls Project</p>
+                        <h1>Random <span class="changeable-color changeableFont">Workout</span> Creator</h1>
                     </div>
                     <div class="menu-container">
                         <ul id="sidemenu" class="menu" onmouseleave="closeMenu()">
-                            <li onclick="openColorPopup()" class="changeableColor">change color</li>
-                            <li onclick="openFontPopup()" class="changeableColor">change font style</li>
+                            <li onclick="openColorPopup()" class="changeable-color">change color</li>
+                            <li onclick="openFontPopup()" class="changeable-color">change font style</li>
                         </ul>
-                        <i class="fa-solid fa-bars changeableColor" id="fa-solid fa-bars" onmouseover="openMenu()"></i>
+                        <i class="fa-solid fa-bars changeable-color" id="fa-solid fa-bars" onmouseover="openMenu()"></i>
                     </div>
                     
                 </div>
             </header>
             <section id="user-input-section">
-                <p class="changeableColor changeableFont">What kind of Workout are you looking for?</p>
+                <p class="changeable-color changeableFont">What kind of Workout are you looking for?</p>
                 <label for="workout-type">Choose workout Type:</label>
 
-                <select name="workout-type" id="workout-type" class="changeableBackgroundColor" onchange="changeBackgroundImage()">
+                <select name="workout-type" id="workout-type" class="changeable-background-color" onchange="changeBackgroundImage()">
                     <option value="mix">mix</option>
                     <option value="weights">weights</option>
                     <option value="endurance">endurance</option>
                     <option value="yoga">yoga</option>
                 </select>
 
-                <p class="changeableColor changeableFont">How long would you like your workout to be?</p>
+                <p class="changeable-color changeableFont">How long would you like your workout to be?</p>
                 <label for="workout-length">Choose your workout length</label>
-                <select name="workout-length" id="workout-length" class="changeableBackgroundColor">
+                <select name="workout-length" id="workout-length" class="changeable-background-color">
                     <option value="short">short</option>
                     <option value="medium">medium</option>
                     <option value="long">long</option>
                 </select>
                 <br>
-                <button class="changeableBackgroundColor" onclick="generateWorkout()">generate workout</button>
+                <button class="changeable-background-color" onclick="generateWorkout()">generate workout</button>
 
             </section>
             <section id="random-workout-output-section">
                 <div id="random-workout-output">
-                    <p class="changeableColor changeableFont">This is your workout</p>
+                    <p class="changeable-color changeableFont">This is your workout</p>
                     <ul id="workout-list">
 
                     </ul>
-                    <button class="changeableBackgroundColor" onclick="clearUnorderedList()">clear workout</button>
+                    <button class="changeable-background-color" onclick="clearUnorderedList()">clear workout</button>
                 </div>
             </section>
             <footer>
                 <div id="copyright">
-                    <p class="changeableColor changeableFont">Copyright © Code First Girls Project</p>
+                    <p class="changeable-color changeableFont">Copyright © Code First Girls Project</p>
                 </div>
             </footer>
             <div id="change-color-popup" class="popup">
-                <div class="popup-content">
-                    <i class="fa-solid fa-xmark changeableColor" onclick="closeColorPopup()"></i>
-                    <p class="changeableColor changeableFont">Please choose a Color</p>
-                    <ul class="circle">
-                        <li><i class="fa-solid fa-palette yellow" onclick="changeColor('yellow')"></i></li>
-                        <li><i class="fa-solid fa-palette orange" onclick="changeColor('orange')"></i></li>
-                        <li><i class="fa-solid fa-palette red" onclick="changeColor('red')"></i></li>
-                        <li><i class="fa-solid fa-palette purple" onclick="changeColor('purple')"></i></li>
-                        <li><i class="fa-solid fa-palette blue" onclick="changeColor('blue')"></i></li>
-                        <li><i class="fa-solid fa-palette green" onclick="changeColor('green')"></i></li>
-                    </ul>
+                <div class="popup-content" id="color-popup-content">
+                    <i class="fa-solid fa-xmark changeable-color" onclick="closeColorPopup()"></i>
+                    <p class="changeable-color changeableFont">Please choose a color from the color-palette or write your own color choice</p>
+                    <div class="choose-color">
+                        <ul class="circle">
+                            <li><i class="fa-solid fa-palette yellow" onclick="changeColor('yellow')"></i></li>
+                            <li><i class="fa-solid fa-palette orange" onclick="changeColor('orange')"></i></li>
+                            <li><i class="fa-solid fa-palette red" onclick="changeColor('red')"></i></li>
+                            <li><i class="fa-solid fa-palette purple" onclick="changeColor('purple')"></i></li>
+                            <li><i class="fa-solid fa-palette blue" onclick="changeColor('blue')"></i></li>
+                            <li><i class="fa-solid fa-palette green" onclick="changeColor('green')"></i></li>
+                        </ul>
+                    </div>
+                    <div class="input-color">
+                        <input type="text" name="input-color" id="input-color" placeholder="choose your own color" onkeydown="changeColorFromInput()">
+                    </div>
                 </div>
             </div>
             <div id="change-font-popup" class="popup">
                 <div class="popup-content">
-                    <i class="fa-solid fa-xmark changeableColor" onclick="closeFontPopup()"></i>
-                    <p class="changeableColor changeableFont">Please choose a font-style</p>
+                    <i class="fa-solid fa-xmark changeable-color" onclick="closeFontPopup()"></i>
+                    <p class="changeable-color changeableFont">Please choose a font-style</p>
                     <ul class="font-list">
                         <li class="cursive" onclick="changeFont('Script MT, Brush Script Std, cursive')">cursive</li>
                         <li class="monospace" onclick="changeFont('Courier New, Courier, monospace')">monospace</li>

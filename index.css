@@ -321,11 +321,11 @@ circle li:hover{
     color: green;
 }
 
-.changeableColor{
+.changeable-color{
     color: orange;
 }
 
-.changeableBackgroundColor{
+.changeable-background-color{
     background-color: orange;
 }
 
