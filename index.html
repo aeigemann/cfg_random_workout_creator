@@ -10,7 +10,7 @@
         <title>Random Workout Creator</title>     
     </head>
 
-    <body>
+    <body onload="addWorkoutOptions()">
         <main>
             <header>
                 <div class="container">
@@ -37,9 +37,7 @@
 
                 <select name="workout-type" id="workout-type" class="changeable-background-color" onchange="changeBackgroundImage()">
                     <option value="mix">mix</option>
-                    <option value="weights">weights</option>
-                    <option value="endurance">endurance</option>
-                    <option value="yoga">yoga</option>
+                    
                 </select>
 
                 <p class="changeable-color changeableFont">How long would you like your workout to be?</p>

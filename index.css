@@ -47,6 +47,8 @@ nav{
 
 .container .fa-solid{
     text-align: right;
+    font-size: 25px;
+    display: block;
 }
 
 .logo{
@@ -100,12 +102,6 @@ html{
     text-decoration: none;
     cursor: pointer;
     font-size: 18px;
-}
-
-.fa-solid{
-    display:block;
-    text-align: right;
-    font-size: 25px;
 }
 
 /*---------------footer---------------*/

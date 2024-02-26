@@ -174,6 +174,18 @@ function changeFont(font){
     }
 }
 
+function addWorkoutOptions(){
+    let options = Object.keys(workoutHashMap);
+    let selectTag = document.getElementById("workout-type")
+
+    options.forEach((element) => {
+        let option = document.createElement("option"); 
+        option.textContent = element;
+        option.value = element 
+        selectTag.appendChild(option); 
+    });
+}
+
 let workoutHashMap = {
     "weights": ["Bench Press", "Squats", "Deadlifts", "Bicep Curls", "Tricep Extensions", "Shoulder Press", "Lunges", "Leg Press", "Pull-ups", "Barbell Rows"],
     "endurance": ["Running", "Cycling", "Swimming", "Jumping Jacks", "Burpees", "Mountain Climbers", "Jump Rope", "High Knees", "Box Jumps", "Rowing"],
