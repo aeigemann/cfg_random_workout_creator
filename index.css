@@ -149,7 +149,7 @@ footer{
 }
 
 #workout-list{
-    color: white;
+    color: #D9D9D9;
 }
 
 p{
@@ -171,6 +171,10 @@ button:hover{
     padding: 6px;
     transition: 5ms;
     border-color: #0d0a0b;
+}
+
+#clearWorkoutButton{
+    visibility: hidden;
 }
 
 select{

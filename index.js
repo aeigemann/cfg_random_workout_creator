@@ -50,6 +50,8 @@ function generateWorkout(){
         li.textContent = element; // Set the text content of the li element
         unorderedList.appendChild(li); // Append the li element to the ul element
     });
+
+    document.getElementById("clearWorkoutButton").style.visibility = "visible"
 }
 
 function getWorkoutToChooseFrom(workoutType){
@@ -85,6 +87,7 @@ function clearWorkout(){
     while (ul.firstChild) {
         ul.removeChild(ul.firstChild);
     }
+    document.getElementById("clearWorkoutButton").style.visibility = "hidden"
 }
 
 // open and close sidemenu on small screens
