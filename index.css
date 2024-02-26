@@ -2,6 +2,7 @@ body {
     background-image: url("images/background-image.jpg");
     background-attachment: fixed;
     background-size: cover;
+    height: 100%;
 }
 
 main{
@@ -19,7 +20,7 @@ main{
 /*---------------------header--------------------*/
 
 header{
-    grid-column: 1 / 15;
+    grid-column: 1 / span 12;
     font-size: 12px;
     vertical-align: top;
     margin-bottom: 100px;
@@ -107,7 +108,7 @@ html{
 /*---------------footer---------------*/
 
 footer{
-    grid-column: 1 / 15;
+    grid-column: 1 / span 12;
     background-color: #0d0a0b;
     font-size: 1.25rem;
     line-height: 1.5;
