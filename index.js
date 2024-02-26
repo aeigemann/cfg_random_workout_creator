@@ -30,7 +30,7 @@ function changeBackgroundImage() {
 
 function generateWorkout(){
 
-    clearUnorderedList()
+    clearWorkout()
     let workoutLength = document.getElementById("workout-length").value 
     let workoutType = document.getElementById("workout-type").value
     if(workoutLength == "short"){
@@ -77,7 +77,7 @@ function getWorkoutArray(workoutsToChooseFrom, numberOfExercises){
 
 }
 
-function clearUnorderedList(){
+function clearWorkout(){
     // Assuming your ul has an id "workout-list"
     let ul = document.getElementById("workout-list");
 
