@@ -80,7 +80,7 @@ function getWorkoutArray(workoutsToChooseFrom, numberOfExercises){
 }
 
 function clearWorkout(){
-    // Assuming your ul has an id "workout-list"
+    // Assuming ul has an id "workout-list"
     let ul = document.getElementById("workout-list");
 
     // Loop through each li element and remove it
@@ -109,7 +109,6 @@ function openColorPopup(){
     document.getElementById("input-color").addEventListener("keydown", function(event) {
         // Check if the key pressed is the Enter key (key code 13)
         if (event.keyCode === 13) {
-            // Call a function or perform any action when the Enter key is pressed
             try{
                 colorString = document.getElementById("input-color").value
                 isValidColor(colorString)
@@ -128,7 +127,7 @@ function openColorPopup(){
 }
 
 function isValidColor(colorString) {
-    // Regular expressions for hex color formats
+    // Regular expressions for hex color formats with # optional
     const hexRegex = new RegExp("^#?([0-9a-f]{3}){1,2}$") 
 
     if(!hexRegex.test(colorString)){
